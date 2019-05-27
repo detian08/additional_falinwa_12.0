@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="fal_mattermost_systray_integration">
+        <li class='control-button o_mail_systray_item'>
+            <a class="fal_mattermost_btn" title="Mattermost" href="#">
+                <i class="fa fa-slack"/>
+            </a>
+        </li>
+    </t>
+</templates>

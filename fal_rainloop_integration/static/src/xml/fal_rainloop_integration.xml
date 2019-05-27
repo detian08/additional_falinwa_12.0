@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="fal_rainloop_systray_integration">
+        <li class='control-button o_mail_systray_item'>
+            <a class="fal_rainloop_btn" title="Webmail" href="#">
+                <i class="fa fa-envelope"/>
+            </a>
+        </li>
+    </t>
+</templates>

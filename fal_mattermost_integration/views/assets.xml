@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright 2019 Falinwa.
+    @author Benoit Lavorata <benoit.lavorata@falinwa.com>
+    License Proprietary
+-->
+<odoo>
+    <data>
+		<template id="assets_backend_mattermost" inherit_id="web.assets_backend">
+			<xpath expr=".">
+				<link rel="stylesheet" href="/fal_mattermost_integration/static/src/scss/fal_mattermost_integration.scss"/>
+				<script type="application/javascript" src="/fal_mattermost_integration/static/src/js/fal_mattermost_integration.js"/>
+			</xpath>
+		</template>
+    </data>
+</odoo>
