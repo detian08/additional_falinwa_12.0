@@ -24,6 +24,7 @@
     "data": [
         "security/ir.model.access.csv",
         'views/assets.xml',
+        'views/res_users_view.xml',
         'views/fal_iframe_integration.xml',
     ],
 }

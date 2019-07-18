@@ -14,4 +14,5 @@ class fal_iframe_integration(models.Model):
     title = fields.Char("Title", default="Iframe")
     url = fields.Char("URL", default="https://")
     icon = fields.Char("Icon", default="random")
+    groups = fields.Many2many('res.groups', 'groups_group_js', 'group_js_id', 'group_id', track_visibility='onchange' , string='Groups')
     
