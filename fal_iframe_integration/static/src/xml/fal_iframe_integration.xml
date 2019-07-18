@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<templates id='template' xml:space='preserve'>
+    <t t-name='fal_iframe_integration_views_systray'>
+        <li class='control-button o_mail_systray_item'>
+            <a t-att-id="widget.btnId" class='fal_iframe_integration_btn' t-att-title="widget.title" href='#'>
+                <i t-att-class="widget.iconClass"/>
+            </a>
+        </li>
+    </t>
+</templates>
