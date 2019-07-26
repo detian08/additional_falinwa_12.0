@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <data>
+      <record id="js_injector_form_view" model="ir.ui.view">
+          <field name="name">js.injector.form</field>
+          <field name="model">js.injector</field>
+          <field name="arch" type="xml">
+          <form>
+                <sheet string="JS Injector">
+                    <div class="oe_title">
+                                <h1>
+                                    <field name="name" required="1"/>
+                                </h1>
+                            </div>
+                    <group name="studio_group_93402a">
+                        <group name="studio_group_96502a_left">
+                            <field name="active"/>
+                        </group>
+                        <group name="studio_group_9523a_right">
+                            <field name="groups" widget="many2many_tags"/>
+                        </group>
+                    </group>
+
+                    <notebook name="studio_notebook_Vj54ou">
+                        <page name="studio_page_Vj523" string="JS">
+                            <field name="js"/>
+                        </page>
+                        <page name="studio_page_Vj43u" string="CSS">
+                            <field name="css"/>
+                        </page>
+                        <page name="studio_page_Vj523u" string="XML">
+                            <field name="xml" widget="ace" options="{'mode': 'xml'}"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+          </field>
+      </record>
+      <!--js_injector list view-->
+      <record id="js_injector_tree_view" model="ir.ui.view">
+          <field name="name">js.injector.list</field>
+          <field name="model">js.injector</field>
+          <field name="arch" type="xml">
+              <tree string="JS Injector">
+                  <field name="name"/>
+                  <field name="groups"/>
+              </tree>
+          </field>
+      </record>
+
+      <record id="action_js_injector" model="ir.actions.act_window">
+        <field name="name">JS Injector</field>
+        <field name="res_model">js.injector</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="search_view_id" eval="False"/>
+        <field name="context">{}</field>
+        <field name="help">customize the group here</field>
+      </record>
+      <menuitem name="JS Injector" id="base.js_injector" parent="base.menu_administration" sequence="6" />
+      <menuitem action="action_js_injector" id="menu_action_js_injector" parent="base.js_injector" sequence="20" />
+  </data>
+</odoo>
